@@ -1,0 +1,52 @@
+﻿@model List<ProIcbf.Models.Role>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido a ICBF</h1>
+    
+</div>
+
+<div class="card my-3">
+    <div class="card-header">
+        <h5 class="mb-0">Lista de Roles</h5>
+    </div>
+    <div class="card-body">
+        <a class="btn btn-success btn-sm mb-3" asp-action="Roles_Detalle" asp-controller="Home" asp-route-id_rol="0">Crear Nuevo</a>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center">
+                <thead class="thead-dark">
+                    <tr>
+                        <th style="width: 10%;">ID</th>
+                        <th style="width: 20%;">Nombre Rol</th>
+                        <th style="width: 20%;">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdRol</td>
+                            <td>@item.NombreRol</td>
+                            <td>
+                                <a class="btn btn-primary btn-sm" asp-action="Roles_Detalle" asp-controller="Home" asp-route-idRol="@item.IdRol">Editar</a>
+
+                                <a class="btn btn-danger btn-sm" onclick="confirmarEliminar(@item.IdRol)">Eliminar</a>
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    function confirmarEliminar(idRol) {
+        if (confirm('¿Está seguro de eliminar este rol?')) {
+            window.location.href = '/Home/Eliminar?idRol=' + idRol;
+        }
+    }
+</script>

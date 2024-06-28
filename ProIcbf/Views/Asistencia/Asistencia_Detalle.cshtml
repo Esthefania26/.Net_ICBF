@@ -1,0 +1,84 @@
+﻿@model ProIcbf.Models.ViewModels.AsistenciaVM
+
+@{
+    ViewData["Title"] = "Asistencia_Detalle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.oAsistencia.IdAsistencia == 0)
+{
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center bg-success">
+            <h1>Crear Asistencia</h1>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center bg-success">
+            <h1>Editar Asistencia</h1>
+        </div>
+    </div>
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5 class="mb-0">Detalle de la Asistencia</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Asistencia_Detalle" asp-controller="Asistencia" method="post">
+                        <input type="hidden" asp-for="oAsistencia.IdAsistencia" />
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Usuario</label>
+                                <select class="form-select form-select-sm" asp-for="oAsistencia.IdUsuario" asp-items="@Model.oListaUsuario" required>
+                                    <option selected disabled>---SELECCIONAR---</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Niño</label>
+                                <select class="form-select form-select-sm" asp-for="oAsistencia.IdNino" asp-items="@Model.oListaNino" required>
+                                    <option selected disabled>---SELECCIONAR---</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Fecha Inasistencia</label>
+                                <input class="form-control form-control-sm" asp-for="oAsistencia.Fecha" type="date" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Detalles (Estado del Niño)</label>
+                                <select class="form-select form-select-sm" asp-for="oAsistencia.Detalles" required>
+                                    <option value="Sano">Sano</option>
+                                    <option value="Enfermo">Enfermo</option>
+                                    <option value="Decaído">Decaído</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-12 d-flex justify-content-between">
+                                @if (Model.oAsistencia.IdAsistencia == 0)
+                                {
+                                    <button class="btn btn-success btn-sm" type="submit">Crear</button>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-primary btn-sm" type="submit">Actualizar</button>
+                                }
+                                <a class="btn btn-dark btn-sm" asp-action="Asistencia" asp-controller="Asistencia">Volver</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

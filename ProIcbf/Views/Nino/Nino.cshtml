@@ -1,0 +1,91 @@
+﻿@model List<ProIcbf.Models.Nino>
+
+@{
+    ViewData["Title"] = "Nino";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Niños</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">Lista de Niños</h5>
+    </div>
+    <div class="card-body">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <a class="btn btn-success btn-sm" asp-action="Nino_Detalle" asp-controller="Nino" asp-route-idNino="0">Crear Nuevo</a>
+                <a class="btn btn-info btn-sm" href="@Url.Action("ExportarPDF", "Nino")">Exportar a PDF</a>
+            </div>
+            <div class="col-md-6 text-right">
+                <input type="text" id="searchInput" class="form-control" placeholder="Buscar...">
+            </div>
+        </div>
+        <hr />
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center" id="ninoTable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Fecha Nacimiento</th>
+                        <th>Tipo Sangre</th>
+                        <th>Ciudad</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
+                        <th>EPS</th>
+                        <th>Identificación de Acudiente</th>
+                        <th>Jardín</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdNino</td>
+                            <td>@item.Nombre</td>
+                            <td>@item.Fecha</td>
+                            <td>@item.Sangre</td>
+                            <td>@item.Ciudad</td>
+                            <td>@item.Telefono</td>
+                            <td>@item.Direccion</td>
+                            <td>@item.Eps</td>
+                            <td>@(item.oUsuario != null ? item.oUsuario.Cedula : "N/A")</td>
+                            <td>@(item.oJardin != null ? item.oJardin.NombreJardin : "N/A")</td>
+                            <td>
+                                <div class="d-inline-flex">
+                                    <a class="btn btn-primary btn-sm mr-2" asp-action="Nino_Detalle" asp-controller="Nino" asp-route-IdNino="@item.IdNino">Editar</a>
+                                    <button class="btn btn-danger btn-sm" onclick="confirmarEliminar(@item.IdNino)">Eliminar</button>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    function confirmarEliminar(id) {
+        if (confirm('¿Está seguro de eliminar este Niño?')) {
+            window.location.href = '/Nino/Eliminar?IdNino=' + id;
+        }
+    }
+
+    document.getElementById('searchInput').addEventListener('keyup', function () {
+        var searchText = this.value.toLowerCase();
+        var rows = document.querySelectorAll('#ninoTable tbody tr');
+
+        rows.forEach(function (row) {
+            var isVisible = false;
+            row.querySelectorAll('td').forEach(function (cell) {
+                if (cell.textContent.toLowerCase().includes(searchText)) {
+                    isVisible = true;
+                }
+            });
+            row.style.display = isVisible ? '' : 'none';
+        });
+    });
+</script>

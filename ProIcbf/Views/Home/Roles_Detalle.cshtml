@@ -1,0 +1,60 @@
+﻿@model ProIcbf.Models.ViewModels.RolVM
+@{
+    ViewData["Title"] = "Roles_Detalle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (Model.oRol.IdRol == 0)
+{
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center bg-success">
+            <h1>Crear Rol</h1>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center bg-success">
+            <h1>Editar Rol</h1>
+        </div>
+    </div>
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5 class="mb-0">Detalle del Rol</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Roles_Detalle" asp-controller="Home" method="post">
+                        <input type="hidden" asp-for="oRol.IdRol" />
+
+                        <div class="mb-3">
+                            <label class="col-form-label" asp-for="oRol.NombreRol">Nombre del rol</label>
+                            <input class="form-control form-control-sm" asp-for="oRol.NombreRol" type="text" />
+                            <span asp-validation-for="oRol.NombreRol" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            @if (Model.oRol.IdRol == 0)
+                            {
+                                <button class="btn btn-success btn-sm" type="submit">Crear</button>
+                            }
+                            else
+                            {
+                                <button class="btn btn-primary btn-sm" type="submit">Actualizar</button>
+                            }
+                            <a class="btn btn-dark btn-sm" asp-action="Index" asp-controller="Home">Volver</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

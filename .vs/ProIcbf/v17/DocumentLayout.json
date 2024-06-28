@@ -1,0 +1,504 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\ProIcbf\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\controllers\\reporteacademicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\controllers\\reporteacademicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\controllers\\ninocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\controllers\\ninocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\controllers\\jardincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\controllers\\jardincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\usuario\\usuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\usuario\\usuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\reporteacademico\\reporteacademico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\reporteacademico\\reporteacademico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\nino\\nino.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\nino\\nino.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\jardin\\jardin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\jardin\\jardin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\asistencia\\asistencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\asistencia\\asistencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\reporteacademico\\reporteacademico_detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\reporteacademico\\reporteacademico_detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\models\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\models\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\asistencia\\asistencia_detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\asistencia\\asistencia_detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\nino\\nino_detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\nino\\nino_detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\models\\viewmodels\\reporteacademicovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\models\\viewmodels\\reporteacademicovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\models\\reporteacademico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\models\\reporteacademico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\proicbf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\proicbf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\models\\copyicbfcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\models\\copyicbfcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\proicbf.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\proicbf.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\models\\nino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\models\\nino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\views\\jardin\\jardin_detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\views\\jardin\\jardin_detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|c:\\users\\user\\documents\\proicbf\\proicbf\\models\\viewmodels\\asistenciavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14D857-289C-4512-AE67-C11C5BAB90DA}|ProIcbf\\ProIcbf.csproj|solutionrelative:proicbf\\models\\viewmodels\\asistenciavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ProIcbf\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\appsettings.Development.json",
+              "RelativeToolTip": "ProIcbf\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-21T00:30:00.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ProIcbf\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAADAAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T23:48:56.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Usuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Usuario\\Usuario.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\Usuario\\Usuario.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Usuario\\Usuario.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\Usuario\\Usuario.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T22:13:20.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JardinController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\JardinController.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Controllers\\JardinController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\JardinController.cs",
+              "RelativeToolTip": "ProIcbf\\Controllers\\JardinController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAADgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T22:17:00.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NinoController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\NinoController.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Controllers\\NinoController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\NinoController.cs",
+              "RelativeToolTip": "ProIcbf\\Controllers\\NinoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T16:30:04.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReporteAcademicoController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\ReporteAcademicoController.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Controllers\\ReporteAcademicoController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\ReporteAcademicoController.cs",
+              "RelativeToolTip": "ProIcbf\\Controllers\\ReporteAcademicoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:35:08.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "ProIcbf\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T22:12:58.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReporteAcademico.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\ReporteAcademico\\ReporteAcademico.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\ReporteAcademico\\ReporteAcademico.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\ReporteAcademico\\ReporteAcademico.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\ReporteAcademico\\ReporteAcademico.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T15:43:18.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Nino.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Nino\\Nino.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\Nino\\Nino.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Nino\\Nino.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\Nino\\Nino.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T17:39:55.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Jardin.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Jardin\\Jardin.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\Jardin\\Jardin.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Jardin\\Jardin.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\Jardin\\Jardin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T22:17:29.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Asistencia.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Asistencia\\Asistencia.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\Asistencia\\Asistencia.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Asistencia\\Asistencia.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\Asistencia\\Asistencia.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T02:25:00.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T22:21:21.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AsistenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\AsistenciaController.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Controllers\\AsistenciaController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Controllers\\AsistenciaController.cs",
+              "RelativeToolTip": "ProIcbf\\Controllers\\AsistenciaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T02:05:24.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T22:23:02.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReporteAcademico_Detalle.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\ReporteAcademico\\ReporteAcademico_Detalle.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\ReporteAcademico\\ReporteAcademico_Detalle.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\ReporteAcademico\\ReporteAcademico_Detalle.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\ReporteAcademico\\ReporteAcademico_Detalle.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAmwGwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T16:02:22.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Asistencia.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\Asistencia.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Models\\Asistencia.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\Asistencia.cs",
+              "RelativeToolTip": "ProIcbf\\Models\\Asistencia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T03:21:39.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Asistencia_Detalle.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Asistencia\\Asistencia_Detalle.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\Asistencia\\Asistencia_Detalle.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Asistencia\\Asistencia_Detalle.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\Asistencia\\Asistencia_Detalle.cshtml",
+              "ViewState": "AQIAADIAAAAAAAAAAADwv1QAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T01:22:32.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Nino_Detalle.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Nino\\Nino_Detalle.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\Nino\\Nino_Detalle.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Nino\\Nino_Detalle.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\Nino\\Nino_Detalle.cshtml",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAAAKYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T16:30:25.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Program.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Program.cs",
+              "RelativeToolTip": "ProIcbf\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAB4AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T20:07:47.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProIcbf.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\ProIcbf.csproj",
+              "RelativeDocumentMoniker": "ProIcbf\\ProIcbf.csproj",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\ProIcbf.csproj",
+              "RelativeToolTip": "ProIcbf\\ProIcbf.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-20T19:57:38.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ReporteAcademicoVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\ViewModels\\ReporteAcademicoVM.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Models\\ViewModels\\ReporteAcademicoVM.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\ViewModels\\ReporteAcademicoVM.cs",
+              "RelativeToolTip": "ProIcbf\\Models\\ViewModels\\ReporteAcademicoVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:38:16.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ReporteAcademico.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\ReporteAcademico.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Models\\ReporteAcademico.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\ReporteAcademico.cs",
+              "RelativeToolTip": "ProIcbf\\Models\\ReporteAcademico.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA+wBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:28:06.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T19:48:52.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ProIcbf\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ProIcbf\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-20T20:02:04.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CopyIcbfContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\CopyIcbfContext.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Models\\CopyIcbfContext.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\CopyIcbfContext.cs",
+              "RelativeToolTip": "ProIcbf\\Models\\CopyIcbfContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG4AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:34:14.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProIcbf",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\ProIcbf.csproj",
+              "RelativeDocumentMoniker": "ProIcbf\\ProIcbf.csproj",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\ProIcbf.csproj",
+              "RelativeToolTip": "ProIcbf\\ProIcbf.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-20T20:02:01.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Nino.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\Nino.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Models\\Nino.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\Nino.cs",
+              "RelativeToolTip": "ProIcbf\\Models\\Nino.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T02:19:45.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Jardin_Detalle.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Jardin\\Jardin_Detalle.cshtml",
+              "RelativeDocumentMoniker": "ProIcbf\\Views\\Jardin\\Jardin_Detalle.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Views\\Jardin\\Jardin_Detalle.cshtml",
+              "RelativeToolTip": "ProIcbf\\Views\\Jardin\\Jardin_Detalle.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAIBJwFAAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T18:24:09.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AsistenciaVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\ViewModels\\AsistenciaVM.cs",
+              "RelativeDocumentMoniker": "ProIcbf\\Models\\ViewModels\\AsistenciaVM.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\ProIcbf\\ProIcbf\\Models\\ViewModels\\AsistenciaVM.cs",
+              "RelativeToolTip": "ProIcbf\\Models\\ViewModels\\AsistenciaVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T02:45:10.865Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

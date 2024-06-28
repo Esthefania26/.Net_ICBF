@@ -1,0 +1,87 @@
+﻿@model List<ProIcbf.Models.ReporteAcademico>
+
+@{
+    ViewData["Title"] = "Reporte Academico";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+<h1>Reporte Academico</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">Lista de Reportes Académicos</h5>
+    </div>
+    <div class="card-body">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <a class="btn btn-success btn-sm mb-3" asp-action="ReporteAcademico_Detalle" asp-controller="ReporteAcademico" asp-route-IdReporte="0">Crear Nuevo</a>
+                <a class="btn btn-info btn-sm mb-3" asp-action="ExportarPDF" asp-controller="ReporteAcademico">Exportar a PDF</a> <!-- Botón para exportar PDF -->
+            </div>
+            <div class="col-md-6 text-right">
+                <input type="text" id="searchInput" class="form-control" placeholder="Buscar...">
+            </div>
+        </div>
+        <hr />
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center" id="reporteTable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID Reporte</th>
+                        <th>Año Escolar</th>
+                        <th>Nivel</th>
+                        <th>Notas</th>
+                        <th>Descripción</th>
+                        <th>Fecha Entrega</th>
+                        <th>Niño</th>
+                        <th>Acudiente</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdReporte</td>
+                            <td>@item.AnoEscolar</td>
+                            <td>@item.Nivel</td>
+                            <td>@item.Notas</td>
+                            <td>@item.Descripcion</td>
+                            <td>@(item.FechaEntrega.HasValue ? item.FechaEntrega.Value.ToString("dd/MM/yyyy") : "Fecha no disponible")</td>
+                            <td>@item.oNino?.Nombre</td>
+                            <td>@item.oUsuario?.NombreUsuario</td>
+                            <td>
+                                <div class="d-inline-flex">
+                                    <a class="btn btn-primary btn-sm mr-2" asp-action="ReporteAcademico_Detalle" asp-controller="ReporteAcademico" asp-route-IdReporte="@item.IdReporte">Editar</a>
+                                    <a class="btn btn-danger btn-sm" onclick="confirmarEliminar(@item.IdReporte)">Eliminar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    function confirmarEliminar(IdReporte) {
+        if (confirm('¿Está seguro de eliminar este Reporte Académico?')) {
+            window.location.href = '/ReporteAcademico/Eliminar?IdReporte=' + IdReporte;
+        }
+    }
+
+    document.getElementById('searchInput').addEventListener('keyup', function () {
+        var searchText = this.value.toLowerCase();
+        var rows = document.querySelectorAll('#reporteTable tbody tr');
+
+        rows.forEach(function (row) {
+            var isVisible = false;
+            row.querySelectorAll('td').forEach(function (cell) {
+                if (cell.textContent.toLowerCase().includes(searchText)) {
+                    isVisible = true;
+                }
+            });
+            row.style.display = isVisible ? '' : 'none';
+        });
+    });
+</script>

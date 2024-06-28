@@ -1,0 +1,81 @@
+﻿@model List<ProIcbf.Models.Jardine>
+
+@{
+    ViewData["Title"] = "Jardin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Jardin Detalle</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">Lista de empleados</h5>
+    </div>
+    <div class="card-body">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <a class="btn btn-success btn-sm" asp-action="Jardin_Detalle" asp-controller="Jardin" asp-route-idjardin="0">Crear Nuevo</a>
+                <a class="btn btn-info btn-sm" asp-action="ExportarExcel" asp-controller="Jardin">Exportar a Excel</a>
+            </div>
+            <div class="col-md-6 text-right">
+                <input type="text" id="searchInput" class="form-control" placeholder="Buscar...">
+            </div>
+        </div>
+        <hr />
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center" id="jardinTable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Direccion</th>
+                        <th>Estado</th>
+                        <th>Madre Comunitaria</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdJardin</td>
+                            <td>@item.NombreJardin</td>
+                            <td>@item.Direccion</td>
+                            <td class="@((item.Estado == "Activo") ? "text-success" : "text-danger")">@item.Estado</td>
+                            <td>@item.oUsuario.NombreUsuario</td>
+                            <td>
+                                <div class="d-inline-flex">
+                                    <a class="btn btn-primary btn-sm mr-4" asp-action="Jardin_Detalle" asp-controller="Jardin" asp-route-idjardin="@item.IdJardin">Editar</a>
+                                    <a class="btn btn-danger btn-sm" onclick="confirmarEliminar(@item.IdJardin)">Eliminar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    function confirmarEliminar(idJardin) {
+        if (confirm('¿Está seguro de eliminar este usuario?')) {
+            window.location.href = '/Jardin/Eliminar?idJardin=' + idJardin;
+        }
+    }
+
+    document.getElementById('searchInput').addEventListener('keyup', function () {
+        var searchText = this.value.toLowerCase();
+        var rows = document.querySelectorAll('#jardinTable tbody tr');
+
+        rows.forEach(function (row) {
+            var isVisible = false;
+            row.querySelectorAll('td').forEach(function (cell) {
+                if (cell.textContent.toLowerCase().includes(searchText)) {
+                    isVisible = true;
+                }
+            });
+            row.style.display = isVisible ? '' : 'none';
+        });
+    });
+</script>

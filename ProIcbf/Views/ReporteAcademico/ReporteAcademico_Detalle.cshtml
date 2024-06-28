@@ -1,0 +1,108 @@
+﻿@model ProIcbf.Models.ViewModels.ReporteAcademicoVM
+
+@{
+    ViewData["Title"] = "ReporteAcademico_Detalle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.oReporteAcademico.IdReporte == 0)
+{
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center bg-success">
+            <h1>Crear Reporte Académico</h1>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center bg-success">
+            <h1>Editar Reporte Académico</h1>
+        </div>
+    </div>
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5 class="mb-0">Detalle del Reporte Académico</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="ReporteAcademico_Detalle" asp-controller="ReporteAcademico" method="post">
+                        <input type="hidden" asp-for="oReporteAcademico.IdReporte" />
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Usuario</label>
+                                <select class="form-select form-select-sm" asp-for="oReporteAcademico.IdUsuario" asp-items="@Model.oListaUsuario" required>
+                                    <option selected disabled>---SELECCIONAR---</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Niño</label>
+                                <select class="form-select form-select-sm" asp-for="oReporteAcademico.IdNino" asp-items="@Model.oListaNino" required>
+                                    <option selected disabled>---SELECCIONAR---</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Año Escolar</label>
+                                <input class="form-control form-control-sm" asp-for="oReporteAcademico.AnoEscolar" type="number" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Nivel</label>
+                                <select class="form-select form-select-sm" asp-for="oReporteAcademico.Nivel" required>
+                                    <option value="Natal">Natal</option>
+                                    <option value="Prenatal">Prenatal</option>
+                                    <option value="Párvulo">Párvulo</option>
+                                    <option value="Jardín">Jardín</option>
+                                    <option value="Pre-jardín">Pre-jardín</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Notas</label>
+                                <select class="form-select form-select-sm" asp-for="oReporteAcademico.Notas" required>
+                                    <option value="S">Superior</option>
+                                    <option value="A">Alto</option>
+                                    <option value="B">Bajo</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Fecha Entrega</label>
+                                <input class="form-control form-control-sm" asp-for="oReporteAcademico.FechaEntrega" type="date" required />
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <label class="form-label">Descripción</label>
+                                <textarea class="form-control form-control-sm" asp-for="oReporteAcademico.Descripcion" rows="3" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-12 d-flex justify-content-between">
+                                @if (Model.oReporteAcademico.IdReporte == 0)
+                                {
+                                    <button class="btn btn-success btn-sm" type="submit">Crear</button>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-primary btn-sm" type="submit">Actualizar</button>
+                                }
+                                <a class="btn btn-dark btn-sm" asp-action="ReporteAcademico" asp-controller="ReporteAcademico">Volver</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

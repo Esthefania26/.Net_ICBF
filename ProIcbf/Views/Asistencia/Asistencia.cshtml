@@ -1,0 +1,81 @@
+﻿@model List<ProIcbf.Models.Asistencia>
+
+@{
+    ViewData["Title"] = "Asistencia";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+<h1>Asistencia</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">Lista de Asistencias</h5>
+    </div>
+    <div class="card-body">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <a class="btn btn-success btn-sm mb-3" asp-action="Asistencia_Detalle" asp-controller="Asistencia" asp-route-IdAsistencia="0">Crear Nuevo</a>
+                <a class="btn btn-info btn-sm mb-3" asp-action="ExportarPDF" asp-controller="Asistencia">Exportar a PDF</a> <!-- Botón para exportar PDF -->
+            </div>
+            <div class="col-md-6 text-right">
+                <input type="text" id="searchInput" class="form-control" placeholder="Buscar...">
+            </div>
+        </div>
+        <hr />
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center" id="asistenciaTable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID Asistencia</th>
+                        <th>Madre Comunitaria</th>
+                        <th>Fecha Inasistencia</th>
+                        <th>Estado del Niño</th>
+                        <th>Niño</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdAsistencia</td>
+                            <td>@item.oUsuario.NombreUsuario</td>
+                            <td>@(item.Fecha.HasValue ? item.Fecha.Value.ToString("dd/MM/yyyy") : "Fecha no disponible")</td>
+                            <td>@item.Detalles</td>
+                            <td>@item.oNino.Nombre</td>
+                            <td>
+                                <div class="d-inline-flex">
+                                    <a class="btn btn-primary btn-sm mr-2" asp-action="Asistencia_Detalle" asp-controller="Asistencia" asp-route-IdAsistencia="@item.IdAsistencia">Editar</a>
+                                    <a class="btn btn-danger btn-sm" onclick="confirmarEliminar(@item.IdAsistencia)">Eliminar</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    function confirmarEliminar(IdAsistencia) {
+        if (confirm('¿Está seguro de eliminar esta Asistencia?')) {
+            window.location.href = '/Asistencia/Eliminar?IdAsistencia=' + IdAsistencia;
+        }
+    }
+
+    document.getElementById('searchInput').addEventListener('keyup', function () {
+        var searchText = this.value.toLowerCase();
+        var rows = document.querySelectorAll('#asistenciaTable tbody tr');
+
+        rows.forEach(function (row) {
+            var isVisible = false;
+            row.querySelectorAll('td').forEach(function (cell) {
+                if (cell.textContent.toLowerCase().includes(searchText)) {
+                    isVisible = true;
+                }
+            });
+            row.style.display = isVisible ? '' : 'none';
+        });
+    });
+</script>

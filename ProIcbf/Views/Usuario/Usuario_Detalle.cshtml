@@ -1,0 +1,152 @@
+﻿@model ProIcbf.Models.ViewModels.UsuarioVM
+@{
+    ViewData["Title"] = "Usuario_Detalle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Calculamos la fecha máxima permitida para ser 18 años antes de la fecha actual
+    var maxDate = DateTime.Now.AddYears(-18).ToString("yyyy-MM-dd");
+}
+
+@if(Model.oUsuario.IdUsuario == 0)
+{
+
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center bg-success">
+            <h1>Crear Usuario</h1>
+        </div>
+    </div>
+}else
+{
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center bg-success">
+            <h1>Editar Usuario</h1>
+        </div>
+    </div>
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5 class="mb-0">Detalle del Usuario</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Usuario_Detalle" asp-controller="Usuario" method="post">
+                        <input type="hidden" asp-for="oUsuario.IdUsuario" />
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oUsuario.NombreUsuario">Nombre Completo</label>
+                                <input class="form-control form-control-sm" asp-for="oUsuario.NombreUsuario" type="text" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oUsuario.Correo">Correo</label>
+                                <input class="form-control form-control-sm" asp-for="oUsuario.Correo" type="email" required id="correo" />
+                                <span class="text-danger" id="correoError" style="display: none;">El correo ya está registrado, cambielo si desea registrar al usuario</span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oUsuario.Contrasena">Contraseña</label>
+                                <input class="form-control form-control-sm" asp-for="oUsuario.Contrasena" type="text" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oUsuario.IdRol">Rol</label>
+                                <select class="form-select form-select-sm" asp-for="oUsuario.IdRol" asp-items="@Model.oListaRole" required>
+                                    <option selected disabled>---SELECCIONAR---</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oUsuario.Cedula">Cedula</label>
+                                <input class="form-control form-control-sm" asp-for="oUsuario.Cedula" type="number" required id="cedula" />
+                                <span class="text-danger" id="cedulaError" style="display: none;">La cédula ya está registrada,cambiela si desea registrar al usuario</span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oUsuario.Telefono">Telefono</label>
+                                <input class="form-control form-control-sm" asp-for="oUsuario.Telefono" type="number" />
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oUsuario.Celular">Celular</label>
+                                <input class="form-control form-control-sm" asp-for="oUsuario.Celular" type="number" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oUsuario.Direccion">Direccion</label>
+                                <input class="form-control form-control-sm" asp-for="oUsuario.Direccion" type="text" required />
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oUsuario.FechaNacimiento">Fecha de Nacimiento</label>
+                                <input class="form-control form-control-sm" asp-for="oUsuario.FechaNacimiento" type="date" max="@maxDate" id="fechaNacimiento" required />
+                                <span class="text-danger" id="fechaNacimientoError" style="display: none;">Debe ser mayor de 18 años</span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-12 d-flex justify-content-between">
+                                @if (Model.oUsuario.IdUsuario == 0)
+                                {
+                                    <button class="btn btn-success btn-sm" type="submit">Crear</button>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-primary btn-sm" type="submit">Actualizar</button>
+                                }
+                                <a class="btn btn-dark btn-sm" asp-action="Usuario" asp-controller="Usuario">Volver</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("fechaNacimiento").addEventListener("input", function () {
+        var inputDate = new Date(this.value);
+        var maxDate = new Date("@maxDate");
+
+        if (inputDate > maxDate) {
+            document.getElementById("fechaNacimientoError").style.display = "inline";
+        } else {
+            document.getElementById("fechaNacimientoError").style.display = "none";
+        }
+    });
+
+    // Función para verificar la unicidad del correo
+    document.getElementById("correo").addEventListener("blur", function () {
+        var correo = this.value;
+        fetch('/Usuario/VerificarCorreo?correo=' + correo)
+            .then(response => response.json())
+            .then(data => {
+                if (data.existe) {
+                    document.getElementById("correoError").style.display = "inline";
+                } else {
+                    document.getElementById("correoError").style.display = "none";
+                }
+            });
+    });
+
+    // Función para verificar la unicidad de la cédula
+    document.getElementById("cedula").addEventListener("blur", function () {
+        var cedula = this.value;
+        fetch('/Usuario/VerificarCedula?cedula=' + cedula)
+            .then(response => response.json())
+            .then(data => {
+                if (data.existe) {
+                    document.getElementById("cedulaError").style.display = "inline";
+                } else {
+                    document.getElementById("cedulaError").style.display = "none";
+                }
+            });
+    });
+</script>

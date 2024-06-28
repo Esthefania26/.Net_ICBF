@@ -1,0 +1,117 @@
+﻿@model ProIcbf.Models.ViewModels.JardinVM
+@{
+ViewData["Title"] = "Jardin_Detalle";
+Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (Model.oJardin.IdJardin == 0)
+{
+<div class="row justify-content-center">
+    <div class="col-md-12 text-center bg-success">
+        <h1>Crear Usuario</h1>
+    </div>
+</div>
+}
+else
+{
+<div class="row justify-content-center">
+    <div class="col-md-12 text-center bg-success">
+        <h1>Editar Usuario</h1>
+    </div>
+</div>
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5 class="mb-0">Detalle del Jardín</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Jardin_Detalle" asp-controller="Jardin" method="post">
+                        <input type="hidden" asp-for="oJardin.IdJardin" />
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oJardin.NombreJardin">Jardín</label>
+                                <input class="form-control form-control-sm" asp-for="oJardin.NombreJardin" type="text" required />
+                                <span class="text-danger" id="nombreJardinError" style="display: none;">El nombre del jardín ya está registrado, cambíelo si desea registrar el jardín</span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oJardin.Direccion">Dirección</label>
+                                <input class="form-control form-control-sm" asp-for="oJardin.Direccion" type="text" required />
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oJardin.Estado">Estado</label>
+                                <select class="form-select form-select-sm" asp-for="oJardin.Estado" id="estadoSelect" required>
+                                    <option selected disabled>---SELECCIONAR---</option>
+                                    <option value="Activo" class="text-success">Activo</option>
+                                    <option value="Inactivo" class="text-danger">Inactivo</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" asp-for="oJardin.IdUsuario">Madre Comunitaria</label>
+                                <select class="form-select form-select-sm" asp-for="oJardin.IdUsuario" asp-items="@Model.oListaUsuario" required>
+                                    <option selected disabled>---SELECCIONAR---</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-12 d-flex justify-content-between">
+                                @if (Model.oJardin.IdJardin == 0)
+                                {
+                                <button class="btn btn-success btn-sm" type="submit">Crear</button>
+                                }
+                                else
+                                {
+                                <button class="btn btn-primary btn-sm" type="submit">Actualizar</button>
+                                }
+                                <a class="btn btn-dark btn-sm" asp-action="Jardin" asp-controller="Jardin">Volver</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        function updateEstadoColor() {
+            const estadoSelect = document.getElementById('estadoSelect');
+            const selectedOption = estadoSelect.options[estadoSelect.selectedIndex];
+
+            // Remove existing color classes
+            estadoSelect.classList.remove('text-success', 'text-danger');
+
+            // Add new color class based on selected option
+            if (selectedOption.value === 'Activo') {
+                estadoSelect.classList.add('text-success');
+            } else if (selectedOption.value === 'Inactivo') {
+                estadoSelect.classList.add('text-danger');
+            }
+        }
+
+        // Initialize color on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            updateEstadoColor();
+        });
+
+        // Función para verificar la unicidad del nombre del jardín
+        document.getElementById("oJardin_NombreJardin").addEventListener("blur", function () {
+            var nombreJardin = this.value;
+            fetch('/Jardin/VerificarNombreJardin?nombreJardin=' + nombreJardin)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.existe) {
+                        document.getElementById("nombreJardinError").style.display = "inline";
+                    } else {
+                        document.getElementById("nombreJardinError").style.display = "none";
+                    }
+                });
+        });
+
+    </script>
